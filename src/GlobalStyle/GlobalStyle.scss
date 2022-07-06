@@ -1,0 +1,52 @@
+@import 'normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,300&display=swap');
+
+:root {
+    --facebook-pri--color: #1877F2;
+    --background-color: #fff;
+    --primary-text: #050505;
+    --secondary-text: #65676B;
+    --hover-color: #F0F2F5;
+    --selected-color: #F0F2F5;
+    --content-background: #F0F2F5;
+    --comment-background: #F0F2F5;
+    --nav-bar-background: #fff;
+    --background-shadow: 0 12px 28px 0 rgba(0,0,0,0.2),0 2px 4px 0 rgba(0,0,0,0.1),inset 0 0 0 1px rgba(255,255,255,0.5);
+    --divider: #CED0D4;
+    --nav-bar-background-gradient: linear-gradient(to top, #242526, rgba(36,37,38,.9), rgba(36,37,38,.7), rgba(36,37,38,.4), rgba(36,37,38,0));
+}
+
+[data-theme="dark"] {
+    --facebook-pri--color: #1877F2;
+    --background-color: #18191A;
+    --primary-text: #E4E6EB;
+    --secondary-text: #B0B3B8;
+    --hover-color: #3A3B3C;
+    --selected-color: #3A3B3C;
+    --content-background: #3A3B3C;
+    --comment-background: #3A3B3C;
+    --background-shadow: 0 12px 28px 0 rgba(0,0,0,0.2),0 2px 4px 0 rgba(0,0,0,0.1),inset 0 0 0 1px rgba(255,255,255,0.5);
+    --divider: #CED0D4;
+    --circle-background: #3E4042;
+    --nav-bar-background: #242526;
+    --border-color: rgba(255, 255, 255, 0.05);
+    --divider: #3E4042;
+    --nav-bar-background-gradient: linear-gradient(to top, #242526, rgba(36,37,38,.9), rgba(36,37,38,.7), rgba(36,37,38,.4), rgba(36,37,38,0));
+}
+  
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    background-color: #18191A;
+}
