@@ -1,0 +1,30 @@
+.wrapper {
+    padding: 72px 0 112px 0;
+}
+
+.logo {
+    width: 300px;
+    // height: 106px;
+    padding-top: 100px;
+    transform: translate(-30px, 12px);
+}
+
+.content {
+    display: flex;
+    margin: 0 auto;
+    padding: 20px 0;
+    position: relative;
+    width: 980px;
+}
+
+.banner {
+    margin-right: 0;
+    padding-right: 32px;
+    width: 580px;
+    & h4 {
+        font-size: 2.8rem;
+        color: var(--primary-text);
+        font-weight: 400;
+    }
+}
+

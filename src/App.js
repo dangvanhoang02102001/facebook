@@ -1,21 +1,17 @@
-import useLocalStorage from 'use-local-storage'
+import { Routes, Route } from 'react-router-dom'
+import { PrivateRoute } from './Components/Common'
+import { DefaultLayout } from './Components/Layout/Index'
+import Login from './features/Auth/Login/Login'
 import GlobalStyle from "./GlobalStyle/GlobalStyle"
 
-const App = (props) => {
-  const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  const [theme, setTheme] = useLocalStorage('theme', defaultDark ? 'dark' : 'light');
-  console.log(theme)
-
-  const handleSwitchTheme = () => {
-      const newTheme = theme === 'light' ? 'dark' : 'light'
-      setTheme(newTheme)
-  }
+const App = () => {
+ 
   return (
     <GlobalStyle>
-      <div style={{ width: '100%', height: '100vh', backgroundColor: 'var(--background-color)'}} data-theme={theme}>
-          <h3>FACEBOOK</h3>
-          <button onClick={handleSwitchTheme}>Switch to {theme === 'light' ? 'dark' : 'light' } theme</button>
-      </div>
+      <Routes>
+        <Route path='login' element={<Login />}/>
+        <Route path='/' exact element={<DefaultLayout />}/>
+      </Routes>
     </GlobalStyle>
 
   )
