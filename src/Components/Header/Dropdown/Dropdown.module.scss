@@ -1,0 +1,39 @@
+.wrapper {
+    position: absolute;
+    bottom: -250px;
+    left: -320px;
+    width: 360px;
+    background-color: var(--nav-bar-background);
+    box-shadow: var(--background-shadow);
+    padding: 8px;
+    border-radius: 8px;
+}
+
+
+.header {
+    
+    padding: 0 8px;
+
+    & .profileLink {
+        display: flex;
+        align-items: center;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 2px 12px 0px;
+        border-radius: 8px;
+        padding: 12px;
+
+        &:hover {
+            cursor: pointer;
+            background-color: var(--hover-color);
+        }
+
+        & span {
+            display: block;
+            margin-left: 12px;
+        }
+    }
+
+}
+
+.list {
+    margin-top: 8px;
+}

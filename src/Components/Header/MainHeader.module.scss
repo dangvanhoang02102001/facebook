@@ -1,0 +1,37 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.iconGroup {
+    width: 112px;
+    height: 100%;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+    position: relative;
+    
+    &:hover {
+        background-color: var(--hover-color);
+        cursor: pointer;
+    }
+
+    &.active::before {
+        content: "";
+        position: absolute;
+        height: 3px;
+        bottom: 0;
+        width: 108px;
+        background-color: var(--facebook-pri--color);
+    }
+
+    &.active:hover {
+        cursor: pointer;
+        background-color: transparent;
+    }
+}
+
+

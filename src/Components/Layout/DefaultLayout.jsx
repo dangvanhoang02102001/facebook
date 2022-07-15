@@ -1,7 +1,10 @@
-export const DefaultLayout = () => {
+import Header from "../Header"
+
+export const DefaultLayout = ({ children }) => {
     return (
         <div>
-            DEFAULT LAYOUT
+            <Header />
+            {children}
         </div>
     )
 }
